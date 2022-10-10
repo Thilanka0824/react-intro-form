@@ -1,5 +1,6 @@
-import React from "react";
-import { useState } from 'react'
+//import React from "react";
+//import MovieDisplay from "./movie-display";
+//import { useState } from 'react'
 
 const MovieForm = () => {
     const [title, setTitle] = useState("");
@@ -42,6 +43,12 @@ const MovieForm = () => {
             <input type="number" step="0.1" onChange={(event) => {
                 setRating(event.target.value)
             }} />
+            <br />
+            <button onClick={() => {
+                const newMovie = {
+                    
+                }
+            }}>Add Movie</button>
 
             <p>Current Title: {title}</p>
             <p>Current Director: {director}</p>
@@ -55,4 +62,4 @@ const MovieForm = () => {
 }
 
 
-export default MovieForm
+//export default MovieForm
